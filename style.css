@@ -1,0 +1,3478 @@
+body {
+    background-color: rgb(241, 241, 241);
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    background: #212529;
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #07beb8;
+}
+
+.background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/mountain\ expedition.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-family: 'Concert One', sans-serif;
+    font-size: 45px;
+    margin-right: auto;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.nav ul li a:hover {
+    color: aqua;
+}
+
+.nav ul li a::after {
+    content: '';
+    background-color: aqua;
+    width: 0;
+    height: 3px;
+    margin: auto;
+    display: block;
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+    transition: width 0.4s linear;
+
+}
+
+
+.button {
+    background-color: #33e8e2;
+    border-radius: 20px;
+    width: 90px;
+    height: 5vh;
+    transition: all 0.6s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.button:hover {
+    -webkit-box-shadow: 0px 0px 30px 3px aqua;
+    -moz-box-shadow: 0px 0px 30px 3px aqua;
+    box-shadow: 0px 0px 30px 3px aqua;
+}
+
+.menu-hamburger {
+    position: absolute;
+    width: 50px;
+    right: 3rem;
+    top: 1.3rem;
+    right: 2rem;
+    display: none;
+}
+
+
+
+.firsttext {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: serif;
+    font-weight: lighter;
+}
+
+.mainline {
+    background-color: #33e8e2;
+    width: 5%;
+    height: 0.7vh;
+    border: none;
+}
+
+.maintext {
+    color: white;
+    font-size: 90px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.buttontwo {
+    background-color: #33e8e2;
+    border-radius: 20px;
+    width: 130px;
+    height: 7vh;
+    transition: all 0.6s;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.buttontwo a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttontwo:hover {
+    -webkit-box-shadow: 0px 0px 30px 3px aqua;
+    -moz-box-shadow: 0px 0px 30px 3px aqua;
+    box-shadow: 0px 0px 30px 3px aqua;
+}
+
+.main {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-spacing: 10px;
+
+}
+
+.sectiontwo {
+    width: 100%;
+    height: fit-content;
+
+}
+
+.maintwo {
+
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.maintexttwo {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.line {
+    background-color: #33e8e2;
+    width: 10%;
+    height: 0.5vh;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+.everest {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    padding-left: 5rem;
+}
+
+.everesttext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.everestparagraph {
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.everestmaintext {
+    font-size: 40px;
+}
+
+.everestphoto {
+    width: 30%;
+    height: 80vh;
+    border-radius: 30px;
+}
+
+.everestphoto2 {
+    display: none;
+}
+
+.madagascar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    padding-right: 8rem;
+}
+
+.madagascartext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.madagascarparagraph {
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.madagascarmaintext {
+    font-size: 40px;
+}
+
+.madagascarphoto {
+    width: 30%;
+    height: 80vh;
+    border-radius: 30px;
+}
+
+.madagascarphoto2 {
+    display: none;
+}
+
+.sectionthree {
+    width: 100%;
+    height: 90vh;
+    background-image: url(img/explore\ the\ world.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.buttonthree {
+    background-color: #33e8e2;
+    border-radius: 20px;
+    width: 180px;
+    height: 8vh;
+    transition: all 0.6s;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.buttonthree a {
+    text-decoration: none;
+    width: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black;
+}
+
+.buttonthree:hover {
+    -webkit-box-shadow: 0px 0px 30px 3px aqua;
+    -moz-box-shadow: 0px 0px 30px 3px aqua;
+    box-shadow: 0px 0px 30px 3px aqua;
+}
+
+.divsectionthree {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+    height: 80vh;
+    margin-left: 10rem;
+}
+
+.maintextthree {
+    font-size: 50px;
+    color: white;
+}
+
+.paragraphthree {
+    font-size: 20px;
+    color: white;
+    width: 40%;
+}
+
+.sectionfour2 {
+    display: none;
+}
+
+.sectionfour {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.kayak2 {
+    display: none;
+}
+
+.climbing2 {
+    display: none;
+}
+
+.ski2 {
+    display: none;
+}
+
+.activitie2 {
+    display: none;
+}
+
+.linetwo {
+    background-color: #33e8e2;
+    width: 10%;
+    height: 0.7vh;
+    border: none;
+
+}
+
+.maintextfour {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    width: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paragraphfour {
+    font-size: 17px;
+    width: 50%;
+    font-weight: lighter;
+}
+
+.buttonfour {
+    width: 180px;
+    background-color: #33e8e2;
+    border-radius: 20px;
+
+    height: 7vh;
+    transition: all 0.6s;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.buttonfour a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttonfour:hover {
+    -webkit-box-shadow: 0px 0px 20px 2px aqua;
+    -moz-box-shadow: 0px 0px 20px 2px aqua;
+    box-shadow: 0px 0px 20px 2px aqua;
+}
+
+.divsectionfour {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 8rem;
+    margin-top: 8rem;
+
+}
+
+#climbingimg {
+    width: 25%;
+    height: 30vh;
+    border-radius: 15px;
+}
+
+#skiimg {
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+#climbingimg {
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+#kayakimg {
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+.container {
+    margin-top: 10rem;
+    display: flex;
+    width: 100%;
+}
+
+.images {
+
+    width: 50%;
+    margin-right: 20rem;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+}
+
+.footer {
+    margin-top: 5rem;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(24, 24, 24);
+}
+
+.footertext {
+    color: rgb(224, 224, 224);
+    font-weight: lighter;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footermain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.footertext {
+    margin-right: auto;
+}
+
+@media screen and (min-width:1250px) and (max-width:1485px) {
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-family: 'Concert One', sans-serif;
+        font-size: 30px;
+        margin-right: auto;
+    }
+
+    .main {
+        margin: 11%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        word-spacing: 10px;
+
+    }
+
+    .maintext {
+        color: white;
+        font-size: 75px;
+    }
+
+    .firsttext {
+        color: white;
+        font-size: 45px;
+        font-family: serif;
+        font-weight: lighter;
+    }
+
+    .linetwo {
+        background-color: aqua;
+        width: 17%;
+        height: 0.7vh;
+        border: none;
+
+    }
+
+    .images {
+
+        width: 50%;
+        margin-right: 7rem;
+        margin-left: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+
+    }
+
+    .line {
+        background-color: aqua;
+        width: 17%;
+        height: 0.7vh;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .divsectionfour {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 8rem;
+        margin-top: 8rem;
+    }
+
+    .paragraphfour {
+        font-size: 17px;
+        width: 80%;
+        font-weight: lighter;
+    }
+
+    .maintextfour {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 80%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .madagascarphoto {
+        width: 40%;
+        height: 70vh;
+        border-radius: 30px;
+    }
+
+    .madagascarmaintext {
+        font-size: 35px;
+    }
+
+    .everestphoto {
+        width: 30%;
+        height: 70vh;
+        border-radius: 30px;
+    }
+
+    .everest {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+
+    }
+
+    .everesttext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .everestmaintext {
+        font-size: 35px;
+    }
+
+    .maintexttwo {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .maintextthree {
+        font-size: 45px;
+        color: white;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: all 0.6s;
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 80px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+    .firsttext {
+        color: white;
+        font-size: 35px;
+        font-family: serif;
+        font-weight: lighter;
+    }
+
+    .madagascar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+
+    }
+}
+
+@media screen and (min-width:1032px) and (max-width:1250px) {
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-family: 'Concert One', sans-serif;
+        font-size: 27px;
+        margin-right: auto;
+    }
+
+    .main {
+        margin: 13%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        word-spacing: 10px;
+
+    }
+
+    .maintext {
+        color: white;
+        font-size: 60px;
+    }
+
+    .firsttext {
+        color: white;
+        font-size: 40px;
+        font-family: serif;
+        font-weight: lighter;
+    }
+
+    .linetwo {
+        background-color: #33e8e2;
+        width: 17%;
+        height: 0.7vh;
+        border: none;
+
+    }
+
+    .images {
+
+        width: 60%;
+        margin-right: 7rem;
+        margin-left: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+
+    }
+
+    .line {
+        background-color: #33e8e2;
+        width: 17%;
+        height: 0.7vh;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .divsectionfour {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 8rem;
+        margin-top: 4rem;
+    }
+
+    .paragraphfour {
+        font-size: 17px;
+        width: 80%;
+        font-weight: lighter;
+    }
+
+    .maintextfour {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 80%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .madagascarphoto {
+        width: 30%;
+        height: 70vh;
+        border-radius: 30px;
+    }
+
+    .madagascarmaintext {
+        font-size: 35px;
+    }
+
+    .everestphoto {
+        width: 30%;
+        height: 70vh;
+        border-radius: 30px;
+    }
+
+    .everest {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        padding-left: 5rem;
+    }
+
+    .everesttext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .everestmaintext {
+        font-size: 35px;
+    }
+
+    .maintexttwo {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .maintextthree {
+        font-size: 45px;
+        color: white;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        transition: all 0.6s;
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 80px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+    .firsttext {
+        color: white;
+        font-size: 35px;
+        font-family: serif;
+        font-weight: lighter;
+    }
+
+    .madagascar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        padding-right: 8rem;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1032px) {
+
+
+
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-family: 'Concert One', sans-serif;
+        font-size: 25px;
+        margin-right: auto;
+    }
+
+    .main {
+        margin: 13%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        word-spacing: 10px;
+
+    }
+
+    .maintext {
+        color: white;
+        font-size: 60px;
+    }
+
+    .firsttext {
+        font-size: 30px;
+    }
+
+    .linetwo {
+        background-color: #33e8e2;
+        width: 15%;
+        height: 0.7vh;
+        border: none;
+
+    }
+
+    .images {
+
+        width: 60%;
+        margin-right: 6rem;
+        margin-left: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+
+    }
+
+    .divsectionfour {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 8rem;
+        margin-top: 4rem;
+    }
+
+    .paragraphfour {
+        font-size: 17px;
+        width: 80%;
+        font-weight: lighter;
+    }
+
+    .maintextfour {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 80%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .madagascarphoto {
+        width: 30%;
+        height: 65vh;
+        border-radius: 30px;
+    }
+
+    .madagascarmaintext {
+        font-size: 35px;
+    }
+
+    .everestphoto {
+        width: 30%;
+        height: 65vh;
+        border-radius: 30px;
+    }
+
+    .everest {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        padding-left: 5rem;
+    }
+
+    .everestmaintext {
+        font-size: 35px;
+    }
+
+    .maintexttwo {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .line {
+        background-color: #33e8e2;
+        width: 17%;
+        height: 0.7vh;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .maintextthree {
+        font-size: 40px;
+        color: white;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 80px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+    .firsttext {
+        color: white;
+        font-size: 35px;
+        font-family: serif;
+        font-weight: lighter;
+    }
+
+    .madagascar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        padding-right: 8rem;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        display: block;
+        background-color: #07beb8;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all ease 0.5s;
+    }
+
+    .nav.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        padding: 25px 0;
+    }
+
+    .nav ul li a {
+        font-size: 25px;
+    }
+
+    .nav ul li a:hover {
+        color: aqua;
+    }
+
+    .nav ul li a::after {
+        content: '';
+        background-color: aqua;
+        width: 0;
+        height: 3px;
+        margin: auto;
+        display: block;
+    }
+
+    .nav ul li a:hover::after {
+        width: 100%;
+        transition: width 0.4s linear;
+
+    }
+
+}
+
+@media screen and (min-width:700px) and (max-width:900px) {
+
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-family: 'Concert One', sans-serif;
+        font-size: 25px;
+        margin-right: auto;
+    }
+
+    .background {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+
+    .maintext {
+        color: white;
+        font-size: 48px;
+    }
+
+    .firsttext {
+        color: white;
+        font-size: 30px;
+        font-family: serif;
+        font-weight: lighter;
+    }
+
+    .main {
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        word-spacing: 10px;
+
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 90px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+
+    .linetwo {
+        background-color: #33e8e2;
+        width: 15%;
+        height: 0.7vh;
+        border: none;
+
+    }
+
+    .images {
+
+        width: 100%;
+        margin-right: 6rem;
+        margin-left: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+
+    }
+
+    .divsectionfour {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 4rem;
+        margin-top: 4rem;
+    }
+
+    .paragraphfour {
+        font-size: 15px;
+        width: 100%;
+        font-weight: lighter;
+    }
+
+    .maintextfour {
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .buttonfour {
+        width: 140px;
+        background-color: #33e8e2;
+        border-radius: 20px;
+        height: 7vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .buttonfour a {
+        font-size: 18px;
+    }
+
+    .madagascarphoto {
+        width: 35%;
+        height: 60vh;
+        border-radius: 30px;
+    }
+
+    .madagascarmaintext {
+        font-size: 24px;
+    }
+
+    .everestphoto {
+        width: 35%;
+        height: 60vh;
+        border-radius: 30px;
+    }
+
+    .everest {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        padding-left: 5rem;
+    }
+
+    .everestmaintext {
+        font-size: 35px;
+    }
+
+    .maintexttwo {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .line {
+        background-color: #33e8e2;
+        width: 17%;
+        height: 0.7vh;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .maintextthree {
+        font-size: 40px;
+        color: white;
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 80px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+    .madagascar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        padding-right: 7rem;
+    }
+
+    .divsectionthree {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+        height: 80vh;
+        margin-left: 7rem;
+    }
+
+    .buttonthree {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 140px;
+        height: 8vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .buttonthree a {
+        font-size: 15px;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        display: block;
+        background-color: #07beb8;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all ease 0.5s;
+    }
+
+    .nav.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        padding: 25px 0;
+    }
+
+    .nav ul li a:hover {
+        color: aqua;
+    }
+
+    .nav ul li a::after {
+        content: '';
+        background-color: aqua;
+        width: 0;
+        height: 3px;
+        margin: auto;
+        display: block;
+    }
+
+    .nav ul li a:hover::after {
+        width: 100%;
+        transition: width 0.4s linear;
+
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width:700px) {
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-family: 'Concert One', sans-serif;
+        font-size: 25px;
+        margin-right: auto;
+    }
+
+    .background {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        display: block;
+        background-color: #07beb8;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all ease 0.5s;
+    }
+
+    .nav.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        padding: 25px 0;
+    }
+
+    .nav ul li a:hover {
+        color: aqua;
+    }
+
+    .nav ul li a::after {
+        content: '';
+        background-color: aqua;
+        width: 0;
+        height: 3px;
+        margin: auto;
+        display: block;
+    }
+
+    .nav ul li a:hover::after {
+        width: 100%;
+        transition: width 0.4s linear;
+
+    }
+
+    .maintext {
+        color: white;
+        font-size: 40px;
+    }
+
+    .firsttext {
+        color: white;
+        font-size: 25px;
+        font-family: serif;
+        font-weight: lighter;
+    }
+
+    .main {
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        word-spacing: 10px;
+
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 90px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+
+    .linetwo {
+        background-color: #33e8e2;
+        width: 15%;
+        height: 0.7vh;
+        border: none;
+
+    }
+
+    .images {
+
+        width: 100%;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+
+    }
+
+    .divsectionfour {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 4rem;
+        margin-top: 6rem;
+    }
+
+    .paragraphfour {
+        font-size: 13px;
+        width: 100%;
+        font-weight: lighter;
+    }
+
+    .maintextfour {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 120%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .buttonfour {
+        width: 120px;
+        background-color: #33e8e2;
+        border-radius: 20px;
+        height: 7vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .buttonfour a {
+        font-size: 18px;
+    }
+
+    .madagascar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        padding-right: 7rem;
+    }
+
+    .madagascartext {
+        text-align: center;
+    }
+
+    .madagascarphoto {
+        width: 40%;
+        height: 50vh;
+        border-radius: 30px;
+    }
+
+    .madagascarmaintext {
+        font-size: 25px;
+        width: 30%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .madagascarparagraph {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .everestphoto {
+        width: 40%;
+        height: 50vh;
+        border-radius: 30px;
+    }
+
+    .everest {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+        padding-left: 7rem;
+    }
+
+    .everestmaintext {
+        font-size: 25px;
+    }
+
+    .everestparagraph {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .maintexttwo {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    .line {
+        background-color: #33e8e2;
+        width: 17%;
+        height: 0.7vh;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 80px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+
+    .divsectionthree {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+        height: 80vh;
+        margin-left: 5rem;
+    }
+
+    .maintextthree {
+        font-size: 33px;
+        color: white;
+    }
+
+    .paragraphthree {
+        font-size: 15px;
+        color: white;
+        width: 40%;
+    }
+
+    .buttonthree {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 120px;
+        height: 8vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .buttonthree a {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-family: 'Concert One', sans-serif;
+        font-size: 20px;
+        margin-right: auto;
+    }
+
+    .background {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+
+    .menu-hamburger {
+        display: block;
+        width: 40px;
+        position: absolute;
+        top: 1.6rem;
+        right: 1rem;
+    }
+
+    .nav {
+        position: absolute;
+        display: block;
+        background-color: #07beb8;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all ease 0.5s;
+    }
+
+    .nav.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        padding: 25px 0;
+    }
+
+    .nav ul li a:hover {
+        color: aqua;
+    }
+
+    .nav ul li a::after {
+        content: '';
+        background-color: aqua;
+        width: 0;
+        height: 3px;
+        margin: auto;
+        display: block;
+    }
+
+    .nav ul li a:hover::after {
+        width: 100%;
+        transition: width 0.4s linear;
+
+    }
+
+    .maintext {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .firsttext {
+        color: white;
+        font-size: 25px;
+        font-family: serif;
+        font-weight: lighter;
+    }
+
+    .main {
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        word-spacing: 10px;
+
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-right: 2rem;
+        width: 30px;
+    }
+
+    .button a {
+        font-size: 10px;
+    }
+
+    .linetwo {
+        background-color: #33e8e2;
+        width: 15%;
+        height: 0.7vh;
+        border: none;
+
+    }
+
+    .images {
+        display: none;
+    }
+
+    .container {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .sectionfour {
+        text-align: center;
+    }
+
+    .divsectionfour {
+        display: none;
+    }
+
+    .sectionfour2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .images-responsive {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem;
+    }
+
+    .kayak2 {
+        display: block;
+        width: 40%;
+        border-radius: 20px;
+    }
+
+    .climbing2 {
+        display: block;
+        width: 40%;
+        border-radius: 20px;
+    }
+
+    .images-responsive2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem;
+    }
+
+    .ski2 {
+        display: block;
+        width: 40%;
+        border-radius: 20px;
+    }
+
+    .activitie2 {
+        display: block;
+        width: 40%;
+        border-radius: 20px;
+    }
+
+    .paragraphfour {
+        font-size: 13px;
+        width: 70%;
+        font-weight: lighter;
+    }
+
+    .maintextfour {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 80%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .buttonfour {
+        width: 120px;
+        background-color: #33e8e2;
+        border-radius: 20px;
+        height: 7vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .buttonfour a {
+        font-size: 18px;
+    }
+
+    .madagascar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+
+    }
+
+    .madagascartext {
+        margin-top: 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8rem;
+    }
+
+    .madagascarphoto {
+        width: 60%;
+        height: 80vh;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .madagascarphoto2 {
+        display: block;
+        width: 300px;
+        height: 70vh;
+        margin-left: 8rem;
+        border-radius: 20px;
+    }
+
+    .madagascarmaintext {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .madagascarparagraph {
+        font-size: 15px;
+        width: 140%;
+    }
+
+    .everestphoto {
+        display: none;
+        width: 125%;
+        height: 80vh;
+        border-radius: 20px;
+    }
+
+    .everestphoto2 {
+        border-radius: 20px;
+        display: block;
+        width: 300px;
+        height: 70vh;
+        margin-left: 3rem;
+    }
+
+    .everest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        margin-right: 7rem;
+    }
+
+    .everesttext {
+        margin-top: 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-left: 2rem;
+    }
+
+    .everestmaintext {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .everestparagraph {
+        font-size: 15px;
+        width: 140%;
+    }
+
+    .maintexttwo {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    .line {
+        background-color: #33e8e2;
+        width: 17%;
+        height: 0.7vh;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 80px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+
+    .divsectionthree {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+        height: 80vh;
+        margin-left: 5rem;
+    }
+
+    .maintextthree {
+        font-size: 33px;
+        color: white;
+    }
+
+    .paragraphthree {
+        font-size: 15px;
+        color: white;
+        width: 60%;
+    }
+
+    .buttonthree {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 120px;
+        height: 8vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .buttonthree a {
+        font-size: 13px;
+    }
+
+    .footertext {
+        font-size: 12px;
+    }
+
+    .footerimg {}
+}
+
+@media screen and (max-width:430px) {
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-family: 'Concert One', sans-serif;
+        font-size: 20px;
+        margin-right: auto;
+    }
+
+    .background {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+
+    .menu-hamburger {
+        display: block;
+        width: 40px;
+        position: absolute;
+        top: 1.6rem;
+        right: 1rem;
+    }
+
+    .nav {
+        position: absolute;
+        display: block;
+        background-color: #07beb8;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all ease 0.5s;
+    }
+
+    .nav.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        padding: 25px 0;
+    }
+
+    .nav ul li a:hover {
+        color: aqua;
+    }
+
+    .nav ul li a::after {
+        content: '';
+        background-color: aqua;
+        width: 0;
+        height: 3px;
+        margin: auto;
+        display: block;
+    }
+
+    .nav ul li a:hover::after {
+        width: 100%;
+        transition: width 0.4s linear;
+
+    }
+
+    .maintext {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .firsttext {
+        color: white;
+        font-size: 25px;
+        font-family: serif;
+        font-weight: lighter;
+    }
+
+    .main {
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        word-spacing: 10px;
+
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-right: 2rem;
+        width: 30px;
+    }
+
+    .button a {
+        font-size: 10px;
+    }
+
+    .linetwo {
+        background-color: #33e8e2;
+        width: 15%;
+        height: 0.7vh;
+        border: none;
+
+    }
+
+    .images {
+        display: none;
+    }
+
+    .container {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .divsectionfour {
+        display: none;
+    }
+
+    .sectionfour2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .images-responsive {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem;
+    }
+
+    .kayak2 {
+        display: block;
+        width: 40%;
+        border-radius: 20px;
+    }
+
+    .climbing2 {
+        display: block;
+        width: 40%;
+        border-radius: 20px;
+    }
+
+    .images-responsive2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem;
+    }
+
+    .ski2 {
+        display: block;
+        width: 40%;
+        border-radius: 20px;
+    }
+
+    .activitie2 {
+        display: block;
+        width: 40%;
+        border-radius: 20px;
+    }
+
+
+    .paragraphfour {
+        font-size: 13px;
+        width: 100%;
+        font-weight: lighter;
+    }
+
+    .maintextfour {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 80%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .buttonfour {
+        width: 120px;
+        background-color: #33e8e2;
+        border-radius: 20px;
+        height: 7vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .buttonfour a {
+        font-size: 18px;
+    }
+
+    .madagascar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+
+    }
+
+    .madagascartext {
+        margin-top: 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8rem;
+    }
+
+    .madagascarphoto {
+        width: 60%;
+        height: 80vh;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .madagascarphoto2 {
+        display: block;
+        width: 300px;
+        height: 50vh;
+        margin-left: 8rem;
+        border-radius: 20px;
+    }
+
+    .madagascarmaintext {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .madagascarparagraph {
+        font-size: 15px;
+        width: 140%;
+    }
+
+    .everestphoto {
+        display: none;
+        width: 125%;
+        height: 80vh;
+        border-radius: 20px;
+    }
+
+    .everestphoto2 {
+        border-radius: 20px;
+        display: block;
+        width: 300px;
+        height: 50vh;
+        margin-left: 3rem;
+    }
+
+    .everest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7rem;
+        margin-right: 7rem;
+    }
+
+    .everesttext {
+        margin-top: 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin-left: 2rem;
+    }
+
+    .everestmaintext {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .everestparagraph {
+        font-size: 15px;
+        width: 140%;
+    }
+
+    .maintexttwo {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    .line {
+        background-color: #33e8e2;
+        width: 17%;
+        height: 0.7vh;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+
+    .button {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 80px;
+        height: 5vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+
+    .divsectionthree {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 70px;
+        height: 80vh;
+        margin-left: 5rem;
+    }
+
+    .maintextthree {
+        font-size: 33px;
+        color: white;
+    }
+
+    .paragraphthree {
+        font-size: 15px;
+        color: white;
+        width: 60%;
+    }
+
+    .buttonthree {
+        background-color: #33e8e2;
+        border-radius: 20px;
+        width: 120px;
+        height: 6vh;
+        transition: all 0.6s;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .buttonthree a {
+        font-size: 13px;
+    }
+
+    .footertext {
+        font-size: 10px;
+    }
+
+    .footerimg {
+        width: 20px;
+    }
+
+}
+
+@media screen and (min-width:1485px) and (max-width:1800px) {
+    .main {}
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .maintexttwo {
+        font-size: 30px;
+    }
+
+    .nav ul li a {
+        font-size: 16px;
+    }
+
+    .maintext {
+        font-size: 70px;
+    }
+
+    .firsttext {
+        font-size: 40px;
+    }
+
+    .maintexttwo {
+        font-size: 50px;
+    }
+
+    .images {
+        margin-right: 6rem;
+    }
+
+    .divsectionfour {
+        margin-left: 8rem;
+        margin-top: 10rem;
+    }
+
+    .maintextfour {
+        width: 80%;
+
+    }
+
+    .buttonfour {
+        height: 8vh;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .main {
+        margin-top: 14rem;
+    }
+
+    .logo {
+        font-size: 50px;
+    }
+
+    .nav ul li a {
+        font-size: 18px;
+    }
+
+    .maintext {
+        font-size: 90px;
+    }
+
+    .firsttext {
+        font-size: 40px;
+    }
+
+    .button {
+        width: 130px;
+        height: 4vh;
+    }
+
+    .buttontwo {
+        width: 180px;
+        height: 6vh;
+    }
+
+    .maintexttwo {
+        font-size: 40px;
+    }
+
+    .everestmaintext {
+        font-size: 50px;
+    }
+
+    .everestparagraph {
+        font-size: 30px;
+    }
+
+    .madagascarmaintext {
+        font-size: 50px;
+    }
+
+    .madagascarparagraph {
+        font-size: 30px;
+    }
+
+    .maintextthree {
+        font-size: 70px;
+    }
+
+    .paragraphthree {
+        font-size: 30px;
+    }
+
+    .buttonthree {
+        width: 180px;
+        height: 6vh;
+    }
+
+    .images {
+        margin-right: 8rem;
+    }
+
+    .divsectionfour {
+        margin-left: 8rem;
+        margin-top: 15rem;
+    }
+
+    .maintextfour {
+        width: 90%;
+        font-size: 60px;
+    }
+
+    .paragraphfour {
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .buttonfour {
+        height: 6vh;
+    }
+
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background-page2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/about\ bg2.jpg);
+    width: 100%;
+    height: 83vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.maintext-page2 {
+    font-size: 70px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about-maintext {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.about-line {
+    margin-top: 1.5rem;
+    background-color: #33e8e2;
+    width: 5%;
+    height: 0.3vh;
+    border: #33e8e2;
+}
+
+.about-paragraph {
+    width: 500px;
+    color: rgb(157, 157, 157);
+    font-size: 20px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.about-img {
+    width: 35%;
+    height: 50vh;
+    border-radius: 5px;
+}
+
+.about-section {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-maintext2 {
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.about-line2 {
+    margin-top: 1rem;
+    background-color: #33e8e2;
+    width: 3%;
+    height: 0.3vh;
+    border: #33e8e2;
+}
+
+.about-paragraph2 {
+    margin-top: 2rem;
+    width: 500px;
+    color: rgb(157, 157, 157);
+    font-size: 20px;
+}
+
+.about-paragraph3 {
+    margin-top: 2rem;
+    width: 500px;
+    color: rgb(157, 157, 157);
+    font-size: 20px;
+}
+
+.about-div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-paragraph4 {
+    margin-top: 2rem;
+    width: 500px;
+    color: rgb(157, 157, 157);
+    font-size: 20px;
+}
+
+.about-section2 {
+    margin-top: 2rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.about-line3 {
+    margin-top: 1rem;
+    background-color: #33e8e2;
+    width: 8%;
+    height: 0.3vh;
+    border: #33e8e2;
+}
+
+.about-line4 {
+    margin-top: 1rem;
+    background-color: #33e8e2;
+    width: 8%;
+    height: 0.3vh;
+    border: #33e8e2;
+}
+
+@media screen and (max-width:1180px) {
+    .about-paragraph {
+        width: 300px;
+        color: rgb(157, 157, 157);
+        font-size: 20px;
+    }
+
+    .about-paragraph2 {
+        margin-top: 2rem;
+        width: 300px;
+        color: rgb(157, 157, 157);
+        font-size: 20px;
+    }
+
+    .about-paragraph3 {
+        margin-top: 2rem;
+        width: 300px;
+        color: rgb(157, 157, 157);
+        font-size: 20px;
+    }
+
+    .about-paragraph4 {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .maintext-page2 {
+        font-size: 50px;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 70vh;
+        border-radius: 5px;
+    }
+
+    .about-section {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about-section2 {
+        margin-top: 8rem;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .about-paragraph {
+        width: 500px;
+        color: rgb(157, 157, 157);
+        font-size: 20px;
+    }
+
+    .about-paragraph2 {
+        width: 250px;
+        color: rgb(157, 157, 157);
+        font-size: 15px;
+    }
+
+    .about-paragraph3 {
+        width: 250px;
+        font-size: 15px;
+    }
+
+    .about-paragraph4 {
+        width: 250px;
+        font-size: 15px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 88%;
+    }
+
+    .about-maintext {
+        font-size: 20px;
+    }
+
+    .about-line {
+        width: 60px;
+        height: 0.5vh;
+    }
+
+    .about-line3 {
+        width: 60px;
+        height: 0.5vh;
+    }
+
+    .about-line4 {
+        width: 60px;
+        height: 0.5vh;
+    }
+
+    .about-maintext2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .maintext-page2 {
+        font-size: 40px;
+    }
+
+    .about-maintext2 {
+        font-size: 25px;
+    }
+
+    .about-paragraph {
+        width: 400px;
+        color: rgb(157, 157, 157);
+        font-size: 20px;
+    }
+
+    .about-section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about-paragraph2 {
+        width: 400px;
+        color: rgb(157, 157, 157);
+        font-size: 18px;
+    }
+
+    .about-paragraph3 {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .about-div2 {
+        margin-top: 3rem;
+    }
+
+    .about-paragraph4 {
+        width: 400px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .maintext-page2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 90%;
+    }
+
+    .about-maintext2 {
+        font-size: 25px;
+    }
+
+    .about-paragraph {
+        width: 300px;
+        color: rgb(157, 157, 157);
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .about-section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about-paragraph2 {
+        width: 300px;
+        color: rgb(157, 157, 157);
+        font-size: 18px;
+    }
+
+    .about-paragraph3 {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .about-div2 {
+        margin-top: 3rem;
+    }
+
+    .about-paragraph4 {
+        width: 300px;
+        font-size: 18px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.background-page4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/aboutbackground3.jpg);
+    width: 100%;
+    height: 83vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.maintext-page4 {
+    font-size: 70px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-page4 {
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.text2 {
+    font-size: 20px;
+}
+
+.paragraph-contact {
+    margin: 10px 0;
+}
+
+.contact-section {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10rem;
+    column-gap: 5rem;
+}
+
+.followus {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 160px;
+}
+
+
+.message {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 40%;
+    height: 70vh;
+}
+
+.name {
+    height: 7vh;
+    width: 90%;
+    font-size: 15px;
+    border: 0.5px solid rgb(209, 209, 209);
+    padding-left: 1rem;
+}
+
+.email {
+    height: 7vh;
+    width: 90%;
+    font-size: 15px;
+    border: 0.5px solid rgb(209, 209, 209);
+    padding-left: 1rem;
+}
+
+#message-area {
+    width: 90%;
+    font-size: 15px;
+    height: 20vh;
+    border: 0.5px solid rgb(209, 209, 209);
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.contact-button {
+    background-color: #33e8e2;
+    border-radius: 20px;
+    width: 160px;
+    height: 6.3vh;
+    transition: all 0.6s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.contact-button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    -webkit-box-shadow: 0px 0px 30px 3px #33e8e2;
+    -moz-box-shadow: 0px 0px 30px 3px #33e8e2;
+    box-shadow: 0px 0px 30px 3px #33e8e2;
+}
+
+@media screen and (max-width:900px) {
+    .maintext-page4 {
+        font-size: 60px;
+    }
+
+    .main-page4 {
+        font-size: 25px;
+    }
+
+    .text1,
+    .text2,
+    .text3,
+    .text4 {
+        font-size: 18px;
+    }
+
+    .paragraph-contact {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        height: 9vh;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .maintext-page4 {
+        font-size: 50px;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .main {
+        margin-top: 9rem;
+    }
+
+    .main-page4 {
+        font-size: 30px;
+    }
+
+    .text1,
+    .text2,
+    .text3,
+    .text4 {
+        font-size: 20px;
+    }
+
+    .message {
+        width: 80%;
+    }
+
+
+
+    .contact-section {
+        width: 100%;
+        height: fit-content;
+        background-color: rgb(241, 241, 241);
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        align-items: flex-start;
+        margin-top: 5rem;
+        row-gap: 5rem;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .maintext-page4 {
+        font-size: 40px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background-page3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/services\ background.jpg);
+    width: 100%;
+    height: 83vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.line-page3 {
+    margin-top: 2rem;
+    background-color: #33e8e2;
+    width: 8%;
+    height: 0.4vh;
+    border: #33e8e2;
+}
+
+.adventures-images {
+    width: 500px;
+    height: 350px;
+    border-radius: 7px;
+}
+
+.maintext-page3 {
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+}
+
+.services-section {
+
+    margin-top: 5rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraph-page3 {
+    width: 50%;
+    text-align: center;
+    font-weight: lighter;
+    color: rgb(107, 107, 107);
+}
+
+.firstdiv {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.leftpart {
+    width: 500px;
+}
+
+.rightpart {
+    width: 500px;
+}
+
+.image1-paragraph {
+    width: 475px;
+    margin-top: 1rem;
+    color: rgb(107, 107, 107);
+    text-align: center;
+}
+
+.image2-paragraph {
+    width: 475px;
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(107, 107, 107);
+    font-size: 16px;
+}
+
+.images-maintext {
+    width: 500px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.seconddiv {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+@media screen and (max-width:1120px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .adventures-images {
+        width: 400px;
+        height: 350px;
+        border-radius: 7px;
+    }
+
+    .leftpart {
+        width: 400px;
+    }
+
+    .rightpart {
+        width: 400px;
+    }
+
+    .image1-paragraph {
+        width: 375px;
+        margin-top: 1rem;
+        color: rgb(107, 107, 107);
+        text-align: center;
+    }
+
+    .image2-paragraph {
+        width: 375px;
+        margin-top: 1rem;
+        text-align: center;
+        color: rgb(107, 107, 107);
+        font-size: 16px;
+    }
+
+    .images-maintext {
+        width: 400px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:906px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .adventures-images {
+        width: 300px;
+        height: 350px;
+        border-radius: 7px;
+    }
+
+    .leftpart {
+        width: 300px;
+    }
+
+    .rightpart {
+        width: 300px;
+    }
+
+    .image1-paragraph {
+        width: 275px;
+        margin-top: 1rem;
+        color: rgb(107, 107, 107);
+        text-align: center;
+    }
+
+    .image2-paragraph {
+        width: 275px;
+        margin-top: 1rem;
+        text-align: center;
+        color: rgb(107, 107, 107);
+        font-size: 16px;
+    }
+
+    .images-maintext {
+        width: 300px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .maintext-page3 {
+        font-size: 25px;
+        width: 300px;
+    }
+
+    .adventures-images {
+        width: 700px;
+        height: 500px;
+    }
+
+    .leftpart {
+        width: 300px;
+    }
+
+    .rightpart {
+        width: 300px;
+    }
+
+    .image1-paragraph {
+        width: 500px;
+        margin-top: 1rem;
+        color: rgb(107, 107, 107);
+        text-align: start;
+        margin-left: 2rem;
+        font-size: 16px;
+    }
+
+    .image2-paragraph {
+        width: 500px;
+        margin-top: 1rem;
+        text-align: start;
+        margin-left: 2rem;
+        color: rgb(107, 107, 107);
+        font-size: 16px;
+    }
+
+    .images-maintext {
+        width: 700px;
+        font-size: 30px;
+        margin-top: 2rem;
+        text-align: start;
+        margin-left: 2rem;
+    }
+
+    .firstdiv {
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .seconddiv {
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width:526px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .maintext-page3 {
+        font-size: 25px;
+        width: 300px;
+    }
+
+    .paragraph-page3 {
+        width: 300px;
+    }
+
+    .adventures-images {
+        width: 550px;
+        height: 500px;
+    }
+
+    .leftpart {
+        width: 300px;
+    }
+
+    .rightpart {
+        width: 300px;
+    }
+
+    .image1-paragraph {
+        width: 400px;
+        margin-top: 1rem;
+        color: rgb(107, 107, 107);
+        text-align: start;
+        margin-left: 2rem;
+        font-size: 16px;
+    }
+
+    .image2-paragraph {
+        width: 400px;
+        margin-top: 1rem;
+        text-align: start;
+        margin-left: 2rem;
+        color: rgb(107, 107, 107);
+        font-size: 16px;
+    }
+
+    .images-maintext {
+        width: 700px;
+        font-size: 30px;
+        margin-top: 2rem;
+        text-align: start;
+        margin-left: 2rem;
+    }
+
+    .firstdiv {
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .seconddiv {
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width:440px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .maintext-page3 {
+        font-size: 25px;
+        width: 300px;
+    }
+
+    .paragraph-page3 {
+        width: 300px;
+    }
+
+    .adventures-images {
+        width: 470px;
+        height: 500px;
+    }
+
+    .leftpart {
+        width: 300px;
+    }
+
+    .rightpart {
+        width: 300px;
+    }
+
+    .image1-paragraph {
+        width: 300px;
+        margin-top: 1rem;
+        color: rgb(107, 107, 107);
+        text-align: start;
+        margin-left: 2rem;
+        font-size: 15px;
+    }
+
+    .image2-paragraph {
+        width: 300px;
+        margin-top: 1rem;
+        text-align: start;
+        margin-left: 2rem;
+        color: rgb(107, 107, 107);
+        font-size: 16px;
+    }
+
+    .images-maintext {
+        width: 700px;
+        font-size: 25px;
+        margin-top: 2rem;
+        text-align: start;
+        margin-left: 2rem;
+    }
+
+    .firstdiv {
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .seconddiv {
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+}
+
+.joinbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/joinus\ bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 92%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot lablel input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 98%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 0 15px;
+    margin-top: 40px;
+}
+
+.input-error {
+    border-color: #ff0000;
+    /* Red border color for invalid input */
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
